@@ -1,5 +1,3 @@
-import React from 'react';
-import Search from '../Search/Search'
 import SearchComponent from '../Search/Search';
 const Hero = () => {
   return (
