@@ -1,13 +1,13 @@
 import React from 'react';
 import Groove from '../../assets/groovehq.png';
 import Quote from '../../assets/2x.png';
-import Shopify from '../../assets/pexels-christina-morillo-1181424-removebg-preview 1.png';
+import Shopify from '../../assets/zwilt-tba-1-01 2.png';
 import GrooveLog from '../../assets/Frame 626655.png';
 export default function Review() {
   return (
     <main className='relative mt-1 h-full  flex'>
       <div className='absolute inset-0 bg-[#202229] transform -skew-y-2 z-0' />
-      <div className="absolute -top-5 right-8 z-10">
+      <div className="absolute -top-5 right-8 z-0">
         <img src={Quote} alt="Quote" className='w-28'/>
       </div>
 
@@ -16,7 +16,7 @@ export default function Review() {
         <div>
         <h4 className='text-white text-5xl font-bold'>How it worked  <br />
             <span className='text-white'> for Jason </span>
-            <img src={Shopify} className="w-8 p-3 shadow-xl rounded-full inline-block align-middle" alt="Shopify Logo" />
+            <img src={Shopify} className="w-20 p-3 rounded-full inline-block align-middle" alt="Shopify Logo" />
             <span className='text-white'> at </span>  
           </h4>
           <img src={Groove} className='w-24 mt-4 inline-block align-middle' alt="" />

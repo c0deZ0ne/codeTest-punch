@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.journey{
+    margin-top: 720px;
+}

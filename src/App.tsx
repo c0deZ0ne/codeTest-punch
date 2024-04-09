@@ -7,20 +7,28 @@ import MarketPlace from './components/Marketplace/MarketPlace'
 import Border from './components/Border/Border'
 import Review from './components/Review/Review'
 import Screening from './components/Screening/Screening'
+import StartJourney from './components/StartJourney/StartJourney'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
   return (
     <>
-   <main className='h-full'>
-     <Navbar />
-     <Hero />
-     <Border />
-     <MarketPlace />
-     <Review/>
-     <Screening/>
-   
-   </main>
+<main className='h-full relative'>
+  <Navbar />
+  <Hero />
+  <Border />
+  <MarketPlace />
+  <Review /> 
+  <Screening />
+
+  <StartJourney />
+  <Footer/>
+
+  
+
+</main>
+
 
    
   

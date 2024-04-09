@@ -4,13 +4,12 @@ import Human from '../../assets/human.png';
 import { AiFillPlaySquare } from "react-icons/ai";
 export default function Screening() {
   return (
-    <main className='relative mt-10 h-full bg-[#f5f5f5] flex'>
-      <div className='absolute inset-0 bg-[#f5f5f5]'>
-        <div className='absolute inset-0 bg-[#f5f5f5] transform -skew-x-20 origin-top-right z-0' />
-        
 
-
-        <div className="flex justify-center lg:gap-72 mt-24"> 
+    
+    <main className='relative '>
+    <div className='absolute inset-0 bg-[#f5f5f5] z-10'>
+      <div className='absolute inset-0 bg-[#f5f5f5] transform -skew-y-20' />
+      <div className="flex justify-center lg:gap-72 mt-24">
 
         <div>
             <h4 className='text-4xl font-bold'>How we ensure you're <br /> in good hands.</h4>
@@ -38,17 +37,17 @@ export default function Screening() {
 
                 <div className='flex border rounded-lg h-14 mt-1 border-gray-300 pl-3'>
                     < AiFillPlaySquare className='text-4xl bg-[#ececec] text-black p-2 mt-3 rounded-full'/>
-                    <p className='mt-5 text-sm ml-2'><span className='font-semibold capitalize'>step 4:</span> Application Review</p>
+                    <p className='mt-5 text-sm ml-2'><span className='font-bold capitalize'>step 4:</span> Application Review</p>
                 </div>
 
                 <div className='flex border rounded-lg mt-1 mb-6 h-14 border-gray-300 pl-3'>
                     < AiFillPlaySquare className='text-4xl bg-[#ececec] text-black p-2 mt-3 rounded-full'/>
-                    <p className='mt-5 text-sm ml-2'><span className='font-semibold capitalize'>step 5:</span> Lets get to work</p>
+                    <p className='mt-5 text-sm ml-2'><span className='font-bold capitalize'>step 5:</span> Lets get to work</p>
                 </div>
             </div>
         </div>
         <div>
-        <div className='flex items-center mt-52'>
+        <div className='flex items-center mt-52 mb-44'>
         <div className="flex items-center">
       <div className="bg-[#8ba4fc] rounded-md px-2 py-1 mr-4">
       <ul className="py-2 px-4 flex flex-col">
@@ -80,12 +79,9 @@ export default function Screening() {
       <img src={Human} alt="Human" className='w-60 h-60 -mt-96 mr-10 bg-[#8ba4f]' />
     </div>
  </div>
-        {/* #8ba4fc */}
-
-
-
         </div>
-      </div>
+        </div>
+    
     </main>
   );
 }

@@ -59,7 +59,7 @@ function Navbar() {
 
             <div className="hidden sm:block flex items-center space-x-6">
               <ul className="flex space-x-6">
-                <li className='dancing-script'><a href="#" className='dancing-script'>Find Work</a></li>
+                <li className='dancing-script font-serif'><a href="#" className='dancing-script font-serif'>Find Work</a></li>
                 <li><a href="#">Find Talent</a></li>
                 <li><a href="#">Articles</a></li>
                 <li><a href="#">About Us</a></li>
