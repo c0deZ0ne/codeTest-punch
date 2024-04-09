@@ -21,7 +21,7 @@ const Hero = () => {
 
       <div className='relative h-60 mt-12 rounded-2xl flex justify-center items-center'>
   <div className='bg-[#f8f8f8] w-full lg:mr-40 h-60 lg:ml-40 rounded-xl'>
-    <ul className='absolute inset-x-4 top-4 flex justify-center items-center'>
+    <ul className='absolute inset-x-4 top-4 flex justify-center items-center gap-x-[10px]'>
       <li className='bg-[#c9efc4] p-2 rounded-xl font-bold pl-5 pr-5 capitalize'>IT & development</li>
       <li className='p-2 bg-[#f2f2f2] rounded-xl text-[#898a8d] pl-5 pr-5 capitalize'>design and creative</li>
     </ul>

@@ -9,9 +9,9 @@ import Building from './Building';
 
 export default function StartJourney() {
   return (
-    <main className='journey relative h-full mt-96 justify-center'>
-      <h1 className='text-center text-5xl font-bold'>Start your journey today.</h1>
-      <div className='relative bg-[#edeffe] mt-16 mx-auto max-w-[calc(100%-300px)] transform -skew-y-2 z-'>
+    <main className='journey relative h-[full]  justify-center w-[100vw] px-[calc(5.3%)] '>
+      <h1 className='text-center text-5xl font-bold relative pt-[50px]'>Start your journey today.</h1>
+      <div className='relative bg-[#edeffe] mt-16 mx-auto transform -skew-y-2 z-'>
         <div className="p-4 flex justify-between z-50">
           <div>
             <div className='flex'>

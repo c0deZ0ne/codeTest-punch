@@ -2,48 +2,32 @@ import React from 'react';
 import { BiLoaderAlt } from "react-icons/bi";
 import Human from '../../assets/human.png';
 import { AiFillPlaySquare } from "react-icons/ai";
+import Steps from './Steps';
 export default function Screening() {
   return (
 
     
-    <main className='relative '>
+    <main className='relative flex flex-col gap-y-[10px] '>
     <div className='absolute inset-0 bg-[#f5f5f5] z-10'>
       <div className='absolute inset-0 bg-[#f5f5f5] transform -skew-y-20' />
       <div className="flex justify-center lg:gap-72 mt-24">
 
-        <div>
+        <div className='flex flex-coll gap-y-[20px] flex-col'>
             <h4 className='text-4xl font-bold'>How we ensure you're <br /> in good hands.</h4>
             <p className='text-gray-500 mt-4'>with our comphrensive screening process, we hand-pick highly <br /> skilled candidates so you can onboard them in a matter of days</p>
-            <div>
-                <div className='flex border rounded-lg h-14 border-gray-300 pl-3'>
-                    < AiFillPlaySquare className='text-4xl bg-[#ececec] text-black p-2 mt-3 rounded-full'/>
-                    <p className='mt-5 text-sm ml-2'> <span className='font-semibold capitalize'>step 1:</span> Resume Screening</p>
-                </div>
-
-                <div className='border rounded-lg h-24 mt-2 border-gray-300 shadow-lg pl-3'>
-                    <div className='flex'>
-                    < AiFillPlaySquare className='text-4xl bg-[#8ba4fc] text-white p-2 mt-3 rounded-full'/>
-                    <p className='mt-5 ml-2 text-sm'><span className='font-semibold capitalize'>step 2:</span> Video Interview</p>
+            <div className=' flex flex-col gap-y-[10px] justify-evenly'>
+              <Steps step={1} title="Resume Screening" />
+                <div className='border flex flex-col   align-middle rounded-lg h-[40%]  border-gray-300 shadow-lg   pl-3  gap-y-[10px] mt-auto mb-auto justify-center '>
+                    <div className='flex gap-x-[10px]  align-middle items-center'>
+                    < AiFillPlaySquare className='text-4xl bg-[#8ba4fc] text-white p-2 rounded-full'/>
+                    <p className='  text-sm'><span className='font-semibold capitalize'>step 2:</span> Video Interview</p>
                     </div>
-                   <p className='text-xs text-gray-500 mt-2'>candidate are assessted through skills based question in a virtual settings. <br />Allow you to gauge personality and cultural fit.</p>
+                   <p className='text-xs text-gray-500 '>candidate are assessted through skills based question in a virtual settings. <br />Allow you to gauge personality and cultural fit.</p>
 
                 </div>
-
-
-                <div className='flex border rounded-lg h-14 mt-1 border-gray-300 pl-3'>
-                    < AiFillPlaySquare className='text-4xl bg-[#ececec] text-black p-2 mt-3 rounded-full'/>
-                    <p className='mt-5 text-sm ml-2'><span className='font-semibold capitalize'>step 3:</span> Technical Evaluation</p>
-                </div>
-
-                <div className='flex border rounded-lg h-14 mt-1 border-gray-300 pl-3'>
-                    < AiFillPlaySquare className='text-4xl bg-[#ececec] text-black p-2 mt-3 rounded-full'/>
-                    <p className='mt-5 text-sm ml-2'><span className='font-bold capitalize'>step 4:</span> Application Review</p>
-                </div>
-
-                <div className='flex border rounded-lg mt-1 mb-6 h-14 border-gray-300 pl-3'>
-                    < AiFillPlaySquare className='text-4xl bg-[#ececec] text-black p-2 mt-3 rounded-full'/>
-                    <p className='mt-5 text-sm ml-2'><span className='font-bold capitalize'>step 5:</span> Lets get to work</p>
-                </div>
+              <Steps step={3} title="Technical Evaluation" />
+              <Steps step={4} title="Application Review" />
+              <Steps step={5} title="Lets get to work<" />
             </div>
         </div>
         <div>

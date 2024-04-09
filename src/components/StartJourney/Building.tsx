@@ -5,7 +5,8 @@ import Details from '../../assets/Group 626358.png';
 export default function Building() {
   return (
     <main className='relative h-full justify-center'>
-    <div className='relative bg-[#f3f3f3] mt-4 mx-auto max-w-[calc(100%-300px)] transform -skew-y-2 z-'>
+    <div className='relative bg-[#f3f3f3] mt-4 mx-auto transform -skew-y-2 z- 
+    '>
    
       <div className="p-4 flex justify-between z-50">
         <div>

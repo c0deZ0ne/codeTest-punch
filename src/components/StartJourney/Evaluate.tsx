@@ -5,7 +5,7 @@ import Details from '../../assets/Group 626351.png';
 export default function Evaluate() {
   return (
     <main className='relative h-full justify-center'>
-      <div className='relative bg-[#fef7e1] mt-4 mx-auto max-w-[calc(100%-300px)] transform -skew-y-2 z-'>
+      <div className='relative bg-[#fef7e1] mt-4 mx-auto transform -skew-y-2 z-'>
         <div className="p-4 flex justify-between z-50">
           <div>
             <div className='flex'>

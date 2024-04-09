@@ -9,20 +9,22 @@ import Review from './components/Review/Review'
 import Screening from './components/Screening/Screening'
 import StartJourney from './components/StartJourney/StartJourney'
 import Footer from './components/Footer/Footer'
+import SliderSection from './components/SliderSection/SliderSection'
 
 function App() {
 
   return (
     <>
-<main className='h-full relative'>
+<main className='h-full relative w-full '>
   <Navbar />
   <Hero />
   <Border />
   <MarketPlace />
   <Review /> 
-  <Screening />
-
-  <StartJourney />
+        <Screening />
+        <StartJourney />
+        
+            < SliderSection/>
   <Footer/>
 
   
