@@ -21,15 +21,15 @@ export function SlideOne({ img, paragraph, color = '#202229', header, link }) {
 
   return (
     <div className='' style={{ ...containerStyle }}>
-      <div className='flex w-[100%] h-[100%] flex-col text-xs items-left gap-y-[20px] justify-center ml-20'>
+      <div className='flex w-[100%] h-[100%] flex-col text-xs items-left gap-y-[22px] justify-center ml-20 overflow-y-hidden'>
         <div className='flex text-[#202229] font-bold text-3xl ml-10 '>
           {header[0]}
           <br />
           {header[1]}
         </div>
-        <div className='ml-10'>
+        <div className='ml-10 gap-x-[10px] flex flex-col'>
           {paragraph?.map((dis, index) => (
-            <p className='flex flex-row items-center mt-1'  key={index} style={{ fontSize: '14px' }}>
+            <p className='flex flex-row items-center mt-1 gap-x-[15px] '  key={index} style={{ fontSize: '14px' }}>
               {SliderSideIcon(color)}
               {dis}
             </p>

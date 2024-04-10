@@ -27,14 +27,7 @@ function SliderSection() {
 			header: ["Stay in the", "loop."]
 		
 		},
-		{
-		img: sliderbg_3,
-		paragraph: ["Track your staff activity down to every minute with screenshots.", "Comprehensive timesheet data to process payments.", "Create projects to organize and assign tasks more effectively."],
-		color: "#C7F4C2",
-		link: "/login",
-			header: ["Stay in the", "loop."]
 		
-		}
 		
 	]
 
@@ -42,7 +35,7 @@ function SliderSection() {
 
 
   return (
-	  <main className='h-[70vh] flex-row flex relative justify-center align-middle  items-center mt-5  bg-[#fafaff] overflow-x-auto'>
+	  <main className='h-[70vh] flex-row flex relative justify-center align-middle  items-center mt-5  bg-[#fafaff] overflow-x-auto overflow-y-hidden'>
 		<div className='w-[700px] text-right ml-10'>
 			<h3 className='text-4xl text-left font-bold'>Why choose <br /> zwilt?</h3>
 			<p className='text-sm text-left mt-5'>We take complex hiring processes - and <br /> simplify them. Connecting you to the world's highly qualified talent pool</p>
