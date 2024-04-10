@@ -3,7 +3,7 @@ import ExploreMore from '../../assets/Frame 626624 (2).png';
 import Logo from '../../assets/Frame 55@2x.png';
 export default function Footer() {
   return (
-    <main className='relative  bg-[#202229] mt-10 h-full '>
+    <main className='relative  bg-[#202229] -mt-10 h-full '>
 
 
 

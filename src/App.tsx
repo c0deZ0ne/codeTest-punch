@@ -10,6 +10,7 @@ import Screening from './components/Screening/Screening'
 import StartJourney from './components/StartJourney/StartJourney'
 import Footer from './components/Footer/Footer'
 import SliderSection from './components/SliderSection/SliderSection'
+import FAQ from './components/FAQ/FAQ'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <StartJourney />
         
             < SliderSection/>
+            <FAQ/>
   <Footer/>
 
   

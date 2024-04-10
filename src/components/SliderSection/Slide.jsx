@@ -1,10 +1,10 @@
-import React from 'react'
-
+import React from 'react';
 import { LearnMoreIcon, SliderSideIcon } from '../../assets/icons';
-export function SlideOne({img,paragraph,color='#202229',header,link}) {
-	  const containerStyle: React.CSSProperties = {
-    width: '100wv',
-    height: '100vh',
+
+export function SlideOne({ img, paragraph, color = '#202229', header, link }) {
+  const containerStyle = {
+    width: '200%',
+    height: '250%',
     backgroundPosition: 'center',
     objectPosition: 'center',
     backgroundRepeat: 'no-repeat',
@@ -13,34 +13,36 @@ export function SlideOne({img,paragraph,color='#202229',header,link}) {
     objectFit: 'contain',
     overflow: 'hidden',
     overflowClipBox: 'content-box',
-	
   };
+
+  const paragraphStyle = {
+    fontSize: '14px', // Adjust the font size as needed
+  };
+
   return (
-	  <div style={{ ...containerStyle }}>
-		  <div className='flex w-[100%] h-[100%] flex-col items-left gap-y-[20px] justify-center ml-[70px] '>
-			  <div className='flex text-[#202229] bold text-[40px] w-[100%] font-[700] ml-[10px]'>  
-				  {header[0]}
-				  <br/>
-				{header[1]}
-				  
-			  </div>
-			  <div>
-				  {paragraph?.map((dis) => (
-					  <p className='flex flex-row items-center align-middle gap-x-[15px] ml-[10px]'>
-					  {SliderSideIcon(color)}
-					  {dis}
-				 
-			  </p>))}				
-			  
-			  </div>
-			 
-			  <a href={link}>
-			  <LearnMoreIcon/>
-			  </a> 
-		  </div>	 
-	  </div>	
-  )
+    <div className='' style={{ ...containerStyle }}>
+      <div className='flex w-[100%] h-[100%] flex-col text-xs items-left gap-y-[20px] justify-center ml-20'>
+        <div className='flex text-[#202229] font-bold text-3xl ml-10 '>
+          {header[0]}
+          <br />
+          {header[1]}
+        </div>
+        <div className='ml-10'>
+          {paragraph?.map((dis, index) => (
+            <p className='flex flex-row items-center mt-1'  key={index} style={{ fontSize: '14px' }}>
+              {SliderSideIcon(color)}
+              {dis}
+            </p>
+          ))}
+        </div>
+        <a href={link} className='ml-8'>
+          <LearnMoreIcon />
+        </a>
+      </div>
+    </div>
+  );
 }
+
 // export function SlideTwo() {
 // 	  const containerStyle: React.CSSProperties = {
 //     width: '1300px',

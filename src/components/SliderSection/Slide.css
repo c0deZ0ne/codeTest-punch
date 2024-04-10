@@ -1,0 +1,33 @@
+.scroll-container-category {
+    width: 200%;
+    height: 570px;
+    overflow-x: auto; 
+  }
+  
+  .scroll-content-category {
+    display: flex;
+    gap: 15px; 
+    width: max-content; 
+    transition: transform 0.3s ease-in-out; 
+  
+  }
+  
+  .scroll-item {
+    flex: 0 0 auto; 
+    background-color: gray;
+  }
+  .textone{
+    font-size: 10px;
+  }
+  
+  /* Apply mobile-specific styles */
+  @media (max-width: 767px) {
+    .scroll-container {
+      height: auto;
+      overflow-x: scroll; 
+      white-space: nowrap; 
+    }
+    .scroll-content {
+      width: 100%; 
+    }
+  }

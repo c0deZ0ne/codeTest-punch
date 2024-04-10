@@ -3,14 +3,14 @@ import { SlideOne } from './Slide';
 import bg_1 from "../../assets/slider1bg.png"
 import bg_2 from "../../assets/slide2bg.png"
 import sliderbg_3 from "../../assets/sliderbg_3.png"
-
+import './Slide.css'
 function SliderSection() {
 	const slideData = [{
 		img: bg_1,
 		paragraph: ["We pick the best for you to select.", "Thousands of vetted candidates in dozens of categories.", "Risk-free resource swapping for the best fit."],
 		color: "#202229",
 		link: "/login",
-		header:["Onboard without","the risk"]
+		header:["Onboard without","the risk."]
 	},
 		{
 		img: bg_2,
@@ -42,14 +42,25 @@ function SliderSection() {
 
 
   return (
-	  <main className='  w-[100%] h-[100vh] flex-row flex relative justify-center align-middle  items-center  bg-red-500 overflow-x-auto'>
+	  <main className='h-[70vh] flex-row flex relative justify-center align-middle  items-center mt-5  bg-[#fafaff] overflow-x-auto'>
+		<div className='w-[700px] text-right ml-10'>
+			<h3 className='text-4xl text-left font-bold'>Why choose <br /> zwilt?</h3>
+			<p className='text-sm text-left mt-5'>We take complex hiring processes - and <br /> simplify them. Connecting you to the world's highly qualified talent pool</p>
+		</div>
 		
-		  <div className='flex flex-row w-[100vw] h-[100%] ' > 
+		<div className="scroll-container-category">
+                <div className="scroll-content-category">
+          <div className="flex flex-row gap-[500px] rounded-xl ">
 			   {slideData.map(({ img, paragraph, color, header, link }) => (
-				   <SlideOne img={img} paragraph={paragraph} link={link} header={header} color={ color} />
+				<div className='w-full text-xs '>
+	   <SlideOne img={img} paragraph={paragraph} link={link} header={header} color={ color} />
+				</div>
+			
 				 					 
 				  
 			  ))}
+		  </div>
+		  </div>
 		  </div>
 		 
 			  
