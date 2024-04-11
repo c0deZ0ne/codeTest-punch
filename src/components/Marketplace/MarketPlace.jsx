@@ -28,6 +28,7 @@ import shopifyLogo from "../../assets/shopifyLogo.png"
 import puwadonLogo from "../../assets/puwadonLogo.png"
 import stacker from "../../assets/image 244.png"
 import wiclLogo from "../../assets/image 247.png"
+import  wicks from "../../assets/image 246.png"
 function MarketPlace() {
   const cardDetails = [
     { logo:figma , title: "UX Designer" },
@@ -41,7 +42,7 @@ function MarketPlace() {
     { logo: puwadonLogo, title: " Magento Developer" },
     { logo: stacker, title: "Data Scientist" },
     { logo: wiclLogo, title: "Webflow Developer" },
-    { logo: cenima, title: "Unreal Engine" }
+    { logo: wicks, title: "Unreal Engine" }
   ]
   return (
     <main className='h-[100%] w-[10010]'>
