@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-<main className='h-full relative w-full '>
+<main className='h-full relative w-full overflow-x-hidden '>
   <Navbar />
   <Hero />
   <Border />
