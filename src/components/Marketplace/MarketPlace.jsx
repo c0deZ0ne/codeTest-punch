@@ -16,146 +16,143 @@ import Vector2 from '../../assets/Vector (2).png';
 import Vector3 from '../../assets/Vector (3).png';
 import Vector4 from '../../assets/Vector (4).png';
 import ExploreMore from '../../assets/Frame 626624 (1).png';
+import figma from "../../assets/figmaImage.png"
+
 import ActionButton from '../../ui-components/ActionButton';
-
+import { marketIconApp,figmaLogoIcon } from '../../assets/icons';
+import pslogo from "../../assets/pslogo.png"
+import adobe from "../../assets/adobe.png"
+import ulogo from "../../assets/ulogo.png"
+import cenima from "../../assets/cenima.png"
 function MarketPlace() {
+  const cardDetails = [
+    { logo: figma, title: "UX Designer" },
+    { logo: pslogo, title: " Graphics Designer" },
+    { logo: adobe, title: "Graphics Designer" },
+    { logo: ulogo, title: "Illustration Artist" },
+    { logo: cenima, title: "Unreal Engine" }
+  ]
   return (
-    <main className=''>
-        <div className='relative mt-16 h-full flex bg-[#edeffe]'>
-
+    <main className='h-[100%] w-[10010]'>
+        <div className='relative mt-16 h-full flex bg-[#edeffe]  '>
       
-      <div className='absolute inset-0 bg-[#edeffe] transform -skew-y-2 z-0' />
+        <div className='absolute inset-0 bg-[#edeffe] transform -skew-y-2 z-0' />
 
-      <div className='z-10 mt-24 w-full'>
-        <div className='flex items-center justify-center'>
-          <h1 className='font-bold text-4xl text-[#202229] text-center'>Your one non-stop marketplace for finding <br />the talent your business needs.</h1>
-        </div>
-
-        <div className="flex justify-center lg:gap-72 mt-24">
-            <div>
-            <p className='text-2xl'>Find dev and IT professionals to <br />scale your business.</p>
-            <div className='flex gap-6 mt-4'>
-                <div className='flex gap-1'>
-                <img src={Vector3} className="" alt="Shopify Logo" />
-                <p className='text-sm'>989 Skills</p>
-                </div>
-         
-            <div className='flex gap-1'>
-            <img src={Vector2} className="" alt="Shopify Logo" />
-            <p className='text-sm whitespace-nowrap'>45 Sub-Categories</p>
-            </div>
-       
-            </div>
-            </div>
-          <div className='shadow bg-white p-6 rounded-lg flex flex-col w-1/2'>
-            <h2 className="text-left mb-4">IT & Developer</h2>
-            <div className="flex items-center justify-between w-full">
-
-          
-              <div className="flex flex-col items-center">
-                <img src={Shopify} className="w-16 p-3 shadow-xl rounded-full" alt="Shopify Logo" />
-                <p className="text-center mt-2">Shopify Developer</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <img src={Magento} className="w-16 p-3 shadow-xl rounded-full" alt="Magento Logo" />
-                <p className="text-center mt-2">Magento Developer</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <img src={Data} className="w-16 p-3 shadow-xl rounded-full" alt="Data Scientist Logo" />
-                <p className="text-center mt-2">Data Scientist</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <img src={WebFlow} className="w-16 p-3 shadow-xl rounded-full" alt="WebFlow Logo" />
-                <p className="text-center mt-2">WebFlow Developer</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <img src={DotNet} className="w-16 p-3 shadow-xl rounded-full" alt="DotNet Logo" />
-                <p className="text-center mt-2">DotNet Developer</p>
-              </div>
-              <div className="flex flex-col -mt-14 items-center">
-                <img src={Vector} className="w-16 p-3 shadow-xl rounded-full" alt="Vector Logo" />
-                
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div className="flex justify-center lg:gap-72 mt-8 mb-10">
-            <div>
-            <p className='text-2xl'>Explore creative individuals with a <br />keen eye for detail.</p>
-            <div className='flex gap-6 mt-4'>
-                <div className='flex gap-1'>
-                <img src={Vector3} className="" alt="Shopify Logo" />
-                <p className='text-sm'>989 Skills</p>
-                </div>
-         
-            <div className='flex gap-1'>
-            <img src={Vector2} className="" alt="Shopify Logo" />
-            <p className='text-sm whitespace-nowrap'>45 Sub-Categories</p>
+          <div className='z-10 mt-24 w-full'>
+            <div className='flex items-center justify-center my-[70px]'>
+              <h1 className='font-bold text-5xl text-[#202229] text-center  font-[800]'>Your one non-stop marketplace for finding <br />the talent your business needs.</h1>
             </div>
 
-            
-       
-            </div>
-            <div className='flex gap-1 mt-4'>
-            <img src={Vector4} className="" alt="Shopify Logo" />
-            <p className='text-sm whitespace-nowrap'>1011 Profiles</p>
-            </div>
-            
-            </div>
-            
-          <div className='shadow bg-white p-6 rounded-lg flex flex-col w-1/2'>
-            <h2 className="text-left mb-4">Design & Creative</h2>
-            <div className="flex items-center justify-between w-full">
-            <div className="flex flex-col -mt-14 items-center">
-                <img src={Vector1} className="w-16 p-3 shadow-xl rounded-full" alt="Vector Logo" />
-                
-              </div>
-          
-              <div className="flex flex-col items-center">
-                <img src={UX} className="w-12 p-3 shadow-xl rounded-full" alt="Shopify Logo" />
-                <p className="text-center mt-2">Shopify Developer</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <img src={Graphics} className="w-16 p-3 shadow-xl rounded-full" alt="Magento Logo" />
-                <p className="text-center mt-2">Magento Developer</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <img src={Illu} className="w-16 p-3 shadow-xl rounded-full" alt="Data Scientist Logo" />
-                <p className="text-center mt-2">Data Scientist</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <img src={Unreal} className="w-16 p-3 shadow-xl rounded-full" alt="WebFlow Logo" />
-                <p className="text-center mt-2">WebFlow Developer</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <img src={Cenima} className="w-16 p-3 shadow-xl rounded-full" alt="DotNet Logo" />
-                <p className="text-center mt-2">DotNet Developer</p>
-              </div>
            
-            </div>
-            
-          </div>
-          
-        </div>
 
-        <div className="flex gap-96 ml-10 mb-10">
-      
-             <div className="flex gap-2 mt-4 w-[200px]">
-                 
-                  <ActionButton text={'Explore More'} link={"/browse_now"}/>
+
+
+            <div className="flex justify-between px-[50px] h-[200px]  my-[20px]">
+                <div className='flex flex-col gap-y-[20px]'>
+                <p className='text-2xl'>Explore creative individuals with a <br />keen eye for detail.</p>
+                <div className='flex gap-x-[20px] items-center   '>
+                    <div className='flex gap-x-[10px] justify-center items-center align-middle mt-auto mb-auto'>
+                      <img src={Vector3} className="" alt="Shopify Logo" />
+                      <span className='text-sm'>989 Skills</span>
+                    </div>
             
+                <div className='flex gap-x-[10px]'>
+                <img src={Vector2} className="" alt="Shopify Logo" />
+                <p className='text-sm whitespace-nowrap'>45 Sub-Categories</p>
                 </div>
 
-              <div className="flex flex-col mr-96 items-center">
+                
+          
+                </div>
+                <div className='flex gap-1 mt-4'>
+                <img src={Vector4} className="" alt="Shopify Logo" />
+                <p className='text-sm whitespace-nowrap'>1011 Profiles</p>
+                </div>
+                
+                </div>
+                
+              <div className='shadow bg-white rounded-lg flex flex-col w-1/2  '>
+                <h2 className=" pt-[20px] pl-[20px] ">Design & Creative</h2>
+                <div className="flex mt-[20px] w-full  h-[100%]  justify-around">
+                <div className="flex flex-col items-center w-[50px] h-[50px]">
+                    {marketIconApp()}
+                  </div>
+              
+                {cardDetails.map((d) => (
+                   <div className="flex flex-col items-center w-[50px] h-[50px] ">
+                
+                {  figmaLogoIcon(d?.logo)}
+                    <p className="text-center w-[100px]">{d.title}</p>
+                  </div>
+                ))}
                
-                <p className="text-center text-gray-700 mt-2 ml-24"><span className='font-bold'>30 more </span> to explore</p>
+            
+                </div>
+                
               </div>
-              </div> 
-        </div>
-        </div>
+              
+            </div>
+            <div className="flex justify-between px-[50px] h-[200px]  my-[20px]">
+                <div className='flex flex-col gap-y-[20px]'>
+                <p className='text-2xl'>Explore creative individuals with a <br />keen eye for detail.</p>
+                <div className='flex gap-x-[20px] items-center  '>
+                    <div className='flex gap-x-[10px] justify-center items-center align-middle mt-auto mb-auto '>
+                      <img src={Vector3} className="" alt="Shopify Logo" />
+                      <span className='text-sm'>989 Skills</span>
+                    </div>
+            
+                <div className='flex gap-x-[10px]'>
+                <img src={Vector2} className="" alt="Shopify Logo" />
+                <p className='text-sm whitespace-nowrap'>45 Sub-Categories</p>
+                </div>
+
+                
+          
+                </div>
+                <div className='flex gap-1 mt-4'>
+                <img src={Vector4} className="" alt="Shopify Logo" />
+                <p className='text-sm whitespace-nowrap'>1011 Profiles</p>
+                </div>
+                
+                </div>
+                
+              <div className='shadow bg-white rounded-lg flex flex-col w-1/2  '>
+                <h2 className=" pt-[20px] pl-[20px] ">Design & Creative</h2>
+                <div className="flex mt-[20px] w-full  h-[100%]  justify-around">
+                <div className="flex flex-col items-center w-[50px] h-[50px]">
+                    {marketIconApp()}
+                  </div>
+              
+                {cardDetails.map((d) => (
+                   <div className="flex flex-col items-center w-[50px] h-[50px] ">
+                
+                {  figmaLogoIcon(d?.logo)}
+                    <p className="text-center w-[100px]">{d.title}</p>
+                  </div>
+                ))}
+               
+            
+                </div>
+                
+              </div>
+              
+            </div>
+
+            <div className="flex gap-96 ml-10 mb-10">
+          
+                <div className="flex gap-2 mt-4 w-[200px]">
+                    
+                      <ActionButton text={'Explore More'} link={"/browse_now"}/>
+                
+                    </div>
+
+                  <div className="flex flex-col mr-96 items-center">
+                  
+                    <p className="text-center text-gray-700 mt-2 ml-24"><span className='font-bold'>30 more </span> to explore</p>
+                  </div>
+                  </div> 
+            </div>
+          </div>
     </main>
   );
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-
 export function LearnMoreIcon() {
 	return (
 		<span>
@@ -25,4 +24,23 @@ export const smallLogo =()=>(<svg width="18" height="11" viewBox="0 0 18 11" fil
 <path d="M9.81085 5.56007C9.81085 7.93935 7.79863 9.86813 5.31643 9.86813C2.83424 9.86813 0.822021 7.93935 0.822021 5.56007C0.822021 3.1808 2.83424 1.25201 5.31643 1.25201C7.79863 1.25201 9.81085 3.1808 9.81085 5.56007Z" fill="#EDEFFF"/>
 <path d="M8.65514 10.6067L8.65514 0.513489L17.644 5.56007L8.65514 10.6067Z" fill="#EDEFFF"/>
 </svg>
+)
+
+export const marketIconApp = () => (
+	<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="-1" y="1" width="94" height="94" rx="29" transform="matrix(-1 0 0 1 94 0.000244141)" fill="#F7F7F7"/>
+<rect x="-1" y="1" width="94" height="94" rx="29" transform="matrix(-1 0 0 1 94 0.000244141)" stroke="#F6F6F6" stroke-width="2"/>
+<path d="M46.6412 47.5002C46.6412 51.0362 49.6317 53.9027 53.3206 53.9027C57.0095 53.9027 60 51.0362 60 47.5002C60 43.9643 57.0095 41.0978 53.3206 41.0978C49.6317 41.0978 46.6412 43.9643 46.6412 47.5002Z" fill="#202229"/>
+<path d="M48.3588 55.0002L48.3588 40.0002L35 47.5002L48.3588 55.0002Z" fill="#202229"/>
+</svg>
+
+)
+
+
+export const figmaLogoIcon = (img) => (
+	<>
+		<div className='w-[50px] bg-[#F6F6F6] h-[50px] rounded-full p-[15px] items-center align-middle flex mr-auto ml-auto'>
+			<img src={img} style={{borderRadius:"100%"}} alt="" className='flex w-[100%] h-[100%] object-contain rounded-full' />
+		</div>
+	</>
 )
