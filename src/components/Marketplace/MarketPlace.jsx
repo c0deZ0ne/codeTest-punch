@@ -24,12 +24,23 @@ import pslogo from "../../assets/pslogo.png"
 import adobe from "../../assets/adobe.png"
 import ulogo from "../../assets/ulogo.png"
 import cenima from "../../assets/cenima.png"
+import shopifyLogo from "../../assets/shopifyLogo.png"
+import puwadonLogo from "../../assets/puwadonLogo.png"
+import stacker from "../../assets/image 244.png"
+import wiclLogo from "../../assets/image 247.png"
 function MarketPlace() {
   const cardDetails = [
-    { logo: figma, title: "UX Designer" },
+    { logo:figma , title: "UX Designer" },
     { logo: pslogo, title: " Graphics Designer" },
     { logo: adobe, title: "Graphics Designer" },
     { logo: ulogo, title: "Illustration Artist" },
+    { logo: cenima, title: "Unreal Engine" }
+  ]
+  const cardDetailsSection2 = [
+    { logo: shopifyLogo, title: "Shopify Developer" },
+    { logo: puwadonLogo, title: " Magento Developer" },
+    { logo: stacker, title: "Data Scientist" },
+    { logo: wiclLogo, title: "Webflow Developer" },
     { logo: cenima, title: "Unreal Engine" }
   ]
   return (
@@ -49,7 +60,9 @@ function MarketPlace() {
 
             <div className="flex justify-between px-[50px] h-[200px]  my-[20px]">
                 <div className='flex flex-col gap-y-[20px]'>
-                <p className='text-2xl'>Explore creative individuals with a <br />keen eye for detail.</p>
+              <p className='text-2xl'>
+                Find dev and IT professionals to
+                <br />scale your business.</p>
                 <div className='flex gap-x-[20px] items-center   '>
                     <div className='flex gap-x-[10px] justify-center items-center align-middle mt-auto mb-auto'>
                       <img src={Vector3} className="" alt="Shopify Logo" />
@@ -72,20 +85,20 @@ function MarketPlace() {
                 </div>
                 
               <div className='shadow bg-white rounded-lg flex flex-col w-1/2  '>
-                <h2 className=" pt-[20px] pl-[20px] ">Design & Creative</h2>
+                <h2 className=" pt-[20px] pl-[20px] ">IT & Development</h2>
                 <div className="flex mt-[20px] w-full  h-[100%]  justify-around">
-                <div className="flex flex-col items-center w-[50px] h-[50px]">
-                    {marketIconApp()}
-                  </div>
-              
-                {cardDetails.map((d) => (
+               
+                {cardDetailsSection2.map((d) => (
                    <div className="flex flex-col items-center w-[50px] h-[50px] ">
                 
                 {  figmaLogoIcon(d?.logo)}
                     <p className="text-center w-[100px]">{d.title}</p>
                   </div>
                 ))}
-               
+                <div className="flex flex-col items-center w-[50px] h-[50px]">
+                    {marketIconApp()}
+                  </div>
+              
             
                 </div>
                 
@@ -140,7 +153,7 @@ function MarketPlace() {
 
             <div className="flex gap-96 ml-10 mb-10">
           
-                <div className="flex gap-2 mt-4 w-[200px]">
+                <div className="flex gap-2 w-[200px]">
                     
                       <ActionButton text={'Explore More'} link={"/browse_now"}/>
                 
@@ -148,7 +161,7 @@ function MarketPlace() {
 
                   <div className="flex flex-col mr-96 items-center">
                   
-                    <p className="text-center text-gray-700 mt-2 ml-24"><span className='font-bold'>30 more </span> to explore</p>
+                    <p className="text-center text-gray-700 mt-[20px] ml-24"><span className='font-bold'>30 more </span> to explore</p>
                   </div>
                   </div> 
             </div>
