@@ -1,5 +1,5 @@
 import React from 'react';
-import { LearnMoreIcon, SliderSideIcon } from '../../assets/icons';
+import { LearnMoreIcon, SliderSideIcon, smallLogo } from '../../assets/icons';
 
 export function SlideOne({ img, paragraph, color = '#202229', header, link }) {
   const containerStyle = {
@@ -35,8 +35,12 @@ export function SlideOne({ img, paragraph, color = '#202229', header, link }) {
             </p>
           ))}
         </div>
-        <a href={link} className='ml-8'>
-          <LearnMoreIcon />
+        <a href={link} className='ml-8 flex align-middle items-center gap-x-[10px] h-[50px] rounded-2xl  hover:bg-[#202229] w-[150px] transition duration-300 ease-in-out group'>
+          {/* <LearnMoreIcon /> */}
+          <div className='flex bg-[#202229] w-[50px] items-center align-middle h-[50px] rounded-2xl flex-row justify-center'>
+            <span  className='flex transition duration-300 ease-in-out group group-hover:translate-x-[100px]'>{ smallLogo()}</span>
+          </div>
+           <span  className='flex transition duration-300 ease-in-out group group-hover:text-white group-hover:translate-x-[-50px]'>Learn More</span>
         </a>
       </div>
     </div>

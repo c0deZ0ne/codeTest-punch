@@ -21,3 +21,8 @@ export const SliderSideIcon = (color:string="#50589F") => (
 		<rect width="18" height="7" rx="3.5" fill={ color} />
 </svg>
 )
+export const smallLogo =()=>(<svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.81085 5.56007C9.81085 7.93935 7.79863 9.86813 5.31643 9.86813C2.83424 9.86813 0.822021 7.93935 0.822021 5.56007C0.822021 3.1808 2.83424 1.25201 5.31643 1.25201C7.79863 1.25201 9.81085 3.1808 9.81085 5.56007Z" fill="#EDEFFF"/>
+<path d="M8.65514 10.6067L8.65514 0.513489L17.644 5.56007L8.65514 10.6067Z" fill="#EDEFFF"/>
+</svg>
+)
