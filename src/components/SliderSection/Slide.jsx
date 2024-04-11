@@ -1,5 +1,6 @@
 import React from 'react';
 import { LearnMoreIcon, SliderSideIcon, smallLogo } from '../../assets/icons';
+import ActionButton from '../../ui-components/ActionButton';
 
 export function SlideOne({ img, paragraph, color = '#202229', header, link }) {
   const containerStyle = {
@@ -35,13 +36,15 @@ export function SlideOne({ img, paragraph, color = '#202229', header, link }) {
             </p>
           ))}
         </div>
-        <a href={link} className='ml-8 flex align-middle items-center gap-x-[10px] h-[50px] rounded-2xl  hover:bg-[#202229] w-[150px] transition duration-300 ease-in-out group'>
-          {/* <LearnMoreIcon /> */}
+       
+        {/* <a href={link} className='ml-8 flex align-middle items-center h-[50px] rounded-2xl  hover:bg-[#202229] w-[150px] transition duration-300 ease-linear group'>
           <div className='flex bg-[#202229] w-[50px] items-center align-middle h-[50px] rounded-2xl flex-row justify-center'>
-            <span  className='flex transition duration-300 ease-in-out group group-hover:translate-x-[100px]'>{ smallLogo()}</span>
+            <span  className='flex transition duration-300 ease-linear   group group-hover:translate-x-[100px]'>{ smallLogo()}</span>
           </div>
-           <span  className='flex transition duration-300 ease-in-out group group-hover:text-white group-hover:translate-x-[-50px]'>Learn More</span>
-        </a>
+           <span  className='flex  transition duration-300 ease-linear group group-hover:text-white group-hover:translate-x-[-50px] px-[15px]'>Learn More</span>
+        </a> */}
+        <ActionButton link={"/"} text={"Lean more"}/>
+        
       </div>
     </div>
   );
