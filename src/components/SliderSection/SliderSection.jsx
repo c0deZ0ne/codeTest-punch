@@ -35,13 +35,13 @@ function SliderSection() {
 
 
   return (
-	  <main className='h-[70vh] flex-row flex relative justify-center align-middle  items-center mt-5  bg-[#fafaff] overflow-x-auto overflow-y-hidden'>
+	  <main className='h-[70vh] flex-row flex relative justify-center align-middle  items-center   bg-[#fafaff] overflow-x-auto overflow-y-hidden self-center mt-auto mb-auto ' >
 		<div className='w-[700px] text-right ml-10'>
 			<h3 className='text-4xl text-left font-bold'>Why choose <br /> zwilt?</h3>
 			<p className='text-sm text-left mt-5'>We take complex hiring processes - and <br /> simplify them. Connecting you to the world's highly qualified talent pool</p>
 		</div>
 		
-		<div className="scroll-container-category">
+		<div className="scroll-container-category overflow-hidden mt-auto mb-auto overflow-y-hidden">
                 <div className="scroll-content-category">
           <div className="flex flex-row gap-[500px] rounded-xl ">
 			   {slideData.map(({ img, paragraph, color, header, link }) => (
