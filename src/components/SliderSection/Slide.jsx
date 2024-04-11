@@ -35,59 +35,15 @@ export function SlideOne({ img, paragraph, color = '#202229', header, link }) {
               {dis}
             </p>
           ))}
-        </div>
-       
-        {/* <a href={link} className='ml-8 flex align-middle items-center h-[50px] rounded-2xl  hover:bg-[#202229] w-[150px] transition duration-300 ease-linear group'>
-          <div className='flex bg-[#202229] w-[50px] items-center align-middle h-[50px] rounded-2xl flex-row justify-center'>
-            <span  className='flex transition duration-300 ease-linear   group group-hover:translate-x-[100px]'>{ smallLogo()}</span>
+          <div className='w-[200px] mt-[20px]'>
+         <ActionButton link={"/"} text={"Lean more"}/>
           </div>
-           <span  className='flex  transition duration-300 ease-linear group group-hover:text-white group-hover:translate-x-[-50px] px-[15px]'>Learn More</span>
-        </a> */}
-        <ActionButton link={"/"} text={"Lean more"}/>
+
+        </div>
+     
         
       </div>
     </div>
   );
 }
-
-// export function SlideTwo() {
-// 	  const containerStyle: React.CSSProperties = {
-//     width: '1300px',
-//     height: '652px',
-//     backgroundPosition: 'center',
-//     objectPosition: 'center',
-//     backgroundRepeat: 'no-repeat',
-//     backgroundImage: `url(${bg_2})`,
-//     backgroundSize: 'cover',
-//     objectFit: 'contain',
-//     overflow: 'hidden',
-//     overflowClipBox: 'content-box',
-	
-//   };
-//   return (
-// 	  <div style={{ ...containerStyle }}>
-// 		  <div className='flex w-[70%] h-[100%] flex-col items-left gap-y-[20px] justify-center ml-[50px] '>
-// 			  <div className='flex text-[#202229] bold text-[40px] w-[300px] font-[700]'>
-// 				  Onboard without the risk.
-// 			  </div>
-// 			  <div>
-// 				   <p className='flex flex-row items-center align-middle gap-x-[15px] ml-[10px]'>
-// 					  {SliderSideIcon("#50589F")}
-// 					  We pick the best for you to select.
-				 
-// 			  </p>
-// 			  <p className='flex flex-row items-center align-middle gap-x-[15px] ml-[10px]'>
-// 					  {SliderSideIcon("#50589F")}
-// 				  Thousands of vetted candidates in dozens of categories.
-// 			  </p>
-// 			  <p className='flex flex-row items-center align-middle gap-x-[15px] ml-[10px]'>{SliderSideIcon("#50589F")} Risk-free resource swapping for the best fit.</p>
-// 			  </div>
-			 
-// 			  <a href="#">
-// 			  <LearnMoreIcon/>
-// 			  </a> 
-// 		  </div>	 
-// 	  </div>	
-//   )
-// }
 

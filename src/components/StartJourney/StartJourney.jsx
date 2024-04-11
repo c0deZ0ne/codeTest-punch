@@ -6,6 +6,7 @@ import profile3 from '../../assets/Mask Group.png';
 import profile4 from '../../assets/image_21-removebg-preview 1.png';
 import Evaluate from './Evaluate';
 import Building from './Building';
+import ActionButton from '../../ui-components/ActionButton';
 
 export default function StartJourney() {
   return (
@@ -21,9 +22,10 @@ export default function StartJourney() {
               <div>
                 <h2 className='text-xl font-bold mt-7 ml-2'>Find your next star <br />performer.</h2>
                 <p className='text-xs mt-6'>Explore the vast zwilt marketplace to find the candidate <br /> that meets your need.</p>
-                <div className="flex gap-2 mt-4">
-                  <img src={ExploreMore} className="w-12" alt="DotNet Logo" />
-                  <p className="text-center text-gray-700 mt-4">Join Now</p>
+                 <div className="flex gap-2 mt-4 w-[200px]">
+                 
+                  <ActionButton text={'Join Now'} link={"/browse_now"}/>
+            
                 </div>
               </div>
             </div>

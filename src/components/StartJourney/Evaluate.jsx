@@ -1,7 +1,7 @@
 import React from 'react';
 import ExploreMore from '../../assets/Frame 626624 (1).png';
 import Details from '../../assets/Group 626351.png';
-
+import ActionButton from '../../ui-components/ActionButton';
 export default function Evaluate() {
   return (
     <main className='relative h-full justify-center'>
@@ -15,9 +15,10 @@ export default function Evaluate() {
               <div>
                 <h2 className='text-xl font-bold mt-7 ml-2'>Evaluate to your <br />heart's content.</h2>
                 <p className='text-xs mt-6'>Access the candidate through work history, transparent, <br /> test and video interview that meets your need.</p>
-                <div className="flex gap-2 mt-4">
-                  <img src={ExploreMore} className="w-12" alt="DotNet Logo" />
-                  <p className="text-center text-gray-700 mt-4">Browse Now</p>
+                <div className="flex gap-2 mt-4 w-[200px]">
+                 
+                  <ActionButton text={'Browse Now'} link={"/browse_now"}/>
+            
                 </div>
               </div>
             </div>

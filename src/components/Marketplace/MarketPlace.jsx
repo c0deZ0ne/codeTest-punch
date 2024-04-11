@@ -16,6 +16,7 @@ import Vector2 from '../../assets/Vector (2).png';
 import Vector3 from '../../assets/Vector (3).png';
 import Vector4 from '../../assets/Vector (4).png';
 import ExploreMore from '../../assets/Frame 626624 (1).png';
+import ActionButton from '../../ui-components/ActionButton';
 
 function MarketPlace() {
   return (
@@ -141,13 +142,15 @@ function MarketPlace() {
         </div>
 
         <div className="flex gap-96 ml-10 mb-10">
-        <div className="flex gap-4">
-                <img src={ExploreMore} className="w-16" alt="DotNet Logo" />
-                <p className="text-center text-gray-700 mt-6">Explore More</p>
-              </div>
+      
+             <div className="flex gap-2 mt-4 w-[200px]">
+                 
+                  <ActionButton text={'Explore More'} link={"/browse_now"}/>
+            
+                </div>
 
               <div className="flex flex-col mr-96 items-center">
-                {/* <img src={Cenima} className="w-16 p-3 shadow-xl rounded-full" alt="DotNet Logo" /> */}
+               
                 <p className="text-center text-gray-700 mt-2 ml-24"><span className='font-bold'>30 more </span> to explore</p>
               </div>
               </div> 
