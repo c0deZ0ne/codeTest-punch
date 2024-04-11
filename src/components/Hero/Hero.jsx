@@ -4,10 +4,10 @@ import SearchComponent from '../Search/Search';
 import Shopify from '../../assets/zwilt-tba-1-01 2.png';
 const Hero = () => {
   return (
-    <main className='mt-32 justify-center items-center'>
+    <main className='mt-32 justify-center items-center '>
       <div className='text-center'>
-        <h2 className="text-6xl font-bold mb-4 text-[#202229]">Find the right fit   <img src={Shopify} className="w-16 -mt-2 rounded-full inline-block align-middle" alt="Shopify Logo" />has <br /> never been easier.</h2>
-        <p className="text-lg text-gray-500 relative">
+        <h2 className="text-6xl font-bold mb-4 text-[#202229] drop-shadow-xl">Find the right fit   <img src={Shopify} className="w-16 -mt-2 rounded-full inline-block align-middle" alt="Shopify Logo" />has <br /> never been easier.</h2>
+        <p className="text-lg text-gray-500 relative  drop-shadow-xl">
           With our rigorous pre-vetting process, you'll never have to <br />worry about finding the ideal candidate ever again.
           <span className="block absolute -bottom-2 inset-x-0  h-1"></span>
         </p>

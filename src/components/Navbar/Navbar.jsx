@@ -25,7 +25,7 @@ function Navbar() {
 
   return (
     <>
-        <header className=" top-0 left-0 right-0 z-50 text-white flex justify-center items-center">
+        <header className=" top-0 left-0 right-0 z-50 text-white flex justify-center items-center drop-shadow-xl">
         <nav className="container mx-auto px-4 lg:px-4 lg:pt-2  w-full lg:ml-20 lg:mt-10 rounded-2xl lg:mr-20 h-14 bg-[#525aa0]">
           <div className="flex justify-between items-center">
             <div className="sm:hidden">
