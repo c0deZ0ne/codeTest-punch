@@ -11,7 +11,7 @@ import ActionButton from '../../ui-components/ActionButton';
 export default function StartJourney() {
   return (
     <main className='journey relative h-[full]  justify-center w-[100vw] px-[calc(5.3%)] '>
-      <h1 className='text-center text-5xl font-bold relative pt-[50px]'>Start your journey today.</h1>
+      <h1 className='text-center text-5xl font-bold relative  pt-[100px]'>Start your journey today.</h1>
       <div className='relative bg-[#edeffe] mt-16 mx-auto transform -skew-y-2 z-'>
         <div className="p-4 flex justify-between z-50">
           <div>
