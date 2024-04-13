@@ -35,10 +35,10 @@ function SliderSection() {
 
 
   return (
-	  <main className='h-[70vh] w-[100%] flex-row flex relative justify-center align-middle  items-center   bg-[#fafaff] overflow-x-auto overflow-y-hidden self-center mt-auto mb-auto ' >
-		<div className='w-[700px] text-right ml-10'>
-			<h3 className='text-4xl text-left font-bold'>Why choose <br /> zwilt?</h3>
-			<p className='text-sm text-left mt-5'>We take complex hiring processes - and <br /> simplify them. Connecting you to the world's highly qualified talent pool</p>
+	  <main className='h-[100vh] w-[100%] flex-row flex relative justify-center align-middle  items-center   bg-[#fafaff] overflow-x-auto overflow-y-hidden self-center mt-auto mb-auto ' >
+		<div className='w-[1500px] text-right mx-[70px] '>
+			<h1 className='text-4xl text-left font-bold'>Why choose <br /> zwilt?</h1>
+			<p className='text-sm text-left mt-5 w-[326px] h-[128px]' >We take complex hiring processes - and <br /> simplify them. Connecting you to the world's highly qualified talent pool</p>
 		</div>
 		
 		<div className="scroll-container-category overflow-hidden mt-auto mb-auto overflow-y-hidden">
